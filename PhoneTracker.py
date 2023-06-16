@@ -31,7 +31,7 @@ TrunkCode = geocoder.description_for_valid_number(Target, "en")
 lineTypeVal = phonenumbers.is_possible_number_for_type(Target, numtype=Line)
 
 
-subprocess.call(["./animacion.sh"]) 
+subprocess.call(["bash","animation.sh"]) 
 
 print("")
 print(Style.BRIGHT+Fore.BLUE + "---------------------------------------------------------------------------------")
@@ -78,3 +78,4 @@ if Carrier_Specific == False: print (Style.BRIGHT+Fore.GREEN + "The carrier is S
 if lineTypeVal == False: print (Style.BRIGHT+Fore.GREEN + "The number is possible for the type of line:" + Style.BRIGHT+Fore.WHITE + " No")
 
 print(Style.BRIGHT+Fore.BLUE + "---------------------------------------------------------------------------------")
+
